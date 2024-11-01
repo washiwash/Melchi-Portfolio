@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Karla:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    background-color: #bde0fe !important;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #8ecae6;
+    padding: 1rem 0;
+}
+
+.nav-item {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.Logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    text-decoration: none;
+    padding: 0 50px;
+    transition: all 0.2s ease;
+}
+
+.Logo:hover {
+    color: #001219;
+   
+}
+
+/* Hero Section */
+.hero {
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-shadow: 7px 3px 14px rgba(0, 0, 0, 0.9);
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: 600;
+    color: #242423;
+    word-break: keep-all;
+    white-space: nowrap;
+    opacity: 0.4;
+}
+
+/* Section Titles */
+.section-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+/* Skills Cards */
+.skills-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Progress Bars */
+.progress {
+    height: 12px;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.skill-label {
+    font-weight: 600;
+    color: #242423;
+    margin-bottom: 0.5rem;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 400px;
+    height: 400px;
+    /* border: 8px solid rgba(255, 255, 255, 0.3); */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Button */
+.btn-custom {
+    background-color: #8ecae6;
+    color: white;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom:hover {
+    background-color: #7ab5cc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Statistics */
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8ecae6;
+}
+
+.stats-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #242423;
+    opacity: 0.6;
+}
+
+/* Progress Bar Colors */
+.progress-bar.bg-success {
+    background-color: #28a745 !important;
+}
+
+.progress-bar.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.progress-bar.bg-danger {
+    background-color: #dc3545 !important;
+
+
+}
+
+/*Projects */
+
+.projects {
+    background-color: #14213d !important;
+    
+}
+
+/* Carousel Styling */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 8px;
+}
+
+.carousel-item:hover .project-img {
+    transform: scale(1.02);
+    filter: brightness(0.85);
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+/* Video Section Styling */
+.video-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-item:hover .project-img {
+    transform: scale(1.05);
+}
+
+.video-overlay {
+    position: relative;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+.video-item:hover .video-overlay {
+    transform: scale(1.05);
+}
+
+
+.overlay-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 0.9em;
+    padding: 0.5em;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-item:hover .overlay-caption {
+    opacity: 1;
+}
+
+/* Button Styling  */
+ .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 100%;
+    padding: 1.5em;
+} 
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+        white-space: normal;
+    }
+    
+    .lead {
+        white-space: normal;
+    }
+    
+    .Logo {
+        padding: 0 20px;
+    }
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+   
+    padding: 1em;
+} 
+}
