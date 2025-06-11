@@ -168,14 +168,26 @@ body {
 }
 
 /* Carousel Styling */
-.carousel-container {
-    max-width: 800px;
-    margin: 0 auto;
+
+
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 }
 
 .project-img {
     transition: transform 0.5s ease, filter 0.5s ease;
     border-radius: 8px;
+}
+
+/* Carousel Images Fixed Size */
+.carousel-item .project-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .carousel-item:hover .project-img {
@@ -232,13 +244,36 @@ body {
 }
 
 /* Button Styling  */
- .carousel-control-prev-icon,
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 100%;
     padding: 1.5em;
-} 
+    width: 20px;
+    height: 50px;
+    background-size: 20px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -254,9 +289,15 @@ body {
     .Logo {
         padding: 0 20px;
     }
+    
     .carousel-control-prev-icon,
-.carousel-control-next-icon {
-   
-    padding: 1em;
-} 
+    .carousel-control-next-icon {
+        padding: 1em;
+        width: 40px;
+        height: 40px;
+    }
+    .carousel-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
 }
